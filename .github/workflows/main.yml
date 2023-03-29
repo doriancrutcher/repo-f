@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: typedocs
-          path: repo-a/docs/
+          path: ./docs/
 
   upload:
     runs-on: ubuntu-latest
