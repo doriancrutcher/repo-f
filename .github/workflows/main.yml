@@ -40,13 +40,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: typedocs
+          path: ./docs-input/to/artifact
 
       - name: Display structure of downloaded files
         run: ls -R
-
-      - name: Copy docs to repo-f
-        run: |
-          cp -r ${{ github.workspace }}/typedocs/* ./docs-input/
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
