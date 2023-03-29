@@ -11,10 +11,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-        # Repository name with owner. For example, actions/checkout
-        # Default: ${{ github.repository }}
-        repository: "doriancrutcher/repo-a"
-        ref: "main"
+          repository: "doriancrutcher/repo-a"
+          ref: "main"
 
       - name: Generate documentation
         run: |
