@@ -40,6 +40,8 @@ jobs:
           repository: "doriancrutcher/repo-f"
           ref: "main"
 
+      # get artifact to download
+
       - name: Get artifact
         uses: actions/download-artifact@v3
         with:
