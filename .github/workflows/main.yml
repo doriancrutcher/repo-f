@@ -26,6 +26,10 @@ jobs:
 
   upload:
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     needs: typedoc
     steps:
       - name: Checkout code
@@ -50,3 +54,4 @@ jobs:
         with:
           commit_message: "Add typedoc documentation"
           commit_options: "--no-verify"
+          tagging_message: "v1.0.0"
