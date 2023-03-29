@@ -16,8 +16,7 @@ jobs:
 
       - name: Generate documentation
         run: |
-          cd repo-a
-          npx typedoc src/index.ts
+          ls
 
       - name: Upload docs as artifact
         uses: actions/upload-artifact@v3
