@@ -44,7 +44,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: typedocs
-          path: ./docs-input/to/artifact
+          path: ./docs-input/
 
       - name: Display structure of downloaded files
         run: ls -R
