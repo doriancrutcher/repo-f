@@ -41,6 +41,9 @@ jobs:
         with:
           name: typedocs
 
+      - name: Display structure of downloaded files
+        run: ls -R
+
       - name: Copy docs to repo-f
         run: |
           cp -r ${{ github.workspace }}/typedocs/* ./docs-input/
